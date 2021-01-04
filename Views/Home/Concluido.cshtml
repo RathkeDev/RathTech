@@ -1,0 +1,52 @@
+
+@model List<Cadastro>
+
+<h1><p>Confira Suas Informações de cadastro e login:</p></h1>
+
+
+<p align = "center">
+        <img src="https://www.logogenio.pt/download/preview/engine/6900897">
+    </p> 
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Data De Nascimento</th>
+                <th>CPF</th>
+                <th>Sexo</th>
+                <th>CEP</th>
+                <th>Endereço</th>
+                <th>Senha</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Cadastro cadastro in Model)
+            {
+                <tr>
+                    <td>@cadastro.Nome</td>
+                    <td>@cadastro.Fone</td>
+                    <td>@cadastro.DataNascimento</td>
+                    <td>@cadastro.Cpf</td>
+                    <td>@cadastro.Sexo</td>
+                     <td>@cadastro.Cep</td>
+                      <td>@cadastro.Endereco</td>
+                       <td>@cadastro.Senha</td>
+                
+                </tr>
+                
+                
+            }
+        </tbody>
+    </table>
+    <style>
+            body{
+                background-color: lightblue;
+            }
+            h1{
+                font-style: italic;
+            }
+
+        </style>
+    <p><a asp-action="Index">Voltar</a></p>

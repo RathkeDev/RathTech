@@ -1,0 +1,42 @@
+
+
+<html>
+    <body>
+         <p aling = "center">
+        <img src="https://www.logogenio.pt/download/preview/engine/6900897">
+    </p> 
+        <div text aling ="left">
+            <p>
+                <h1>
+                Selecione o método de pagamento:
+            </h1>
+
+            </p>
+        </div>
+        <div text aling="left">
+            <p>
+                <label>Pagamento:</label>
+                <select name="pagamento" id="">
+                    <option value="">Selecione o método de Pagamento:</option>
+                    <option value="1">Boleto Bancário</option>
+                    <option value="2">Cartão de Crédito</option>
+                </select>
+            </p>
+            
+        </div>
+        <p>
+            <button type="submit"> <a asp-action="Confirmacao">Confirmar Compra</a></button>
+             </p> 
+          
+        <style>
+            h1{
+                font-style: italic;
+                color: darkblue;
+            }
+             body{
+                background-color: lightblue;
+            }
+        </style>
+        
+    </body>
+</html>

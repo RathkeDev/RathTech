@@ -1,0 +1,81 @@
+@model Cadastro
+
+@{
+    ViewData["Title"] = "Cadastro";
+    
+}
+<html>
+    <head>
+        <title>
+        RathTech - Cadastro
+    </title>
+    </head>
+    <body>
+         <p aling = "left">
+        <img src="https://www.logogenio.pt/download/preview/engine/6900897">
+    </p> 
+
+    <p aling= "center">
+
+    <form method="POST" asp-action="Cadastrar" >
+        <p align="center">
+        <h2>Faça seu Cadastro:</h2>
+        </p>
+        <p>
+                <label asp-for="Nome">Nome Completo</label>
+                <input type="text" asp-for="Nome" name="Nome" placeholder="Digite seu nome:">
+        </p>
+        <p>
+            <label asp-for="Cpf">CPF</label>
+            <input type="text" asp-for="Cpf" name="Cpf"  placeholder="Digite seu CPF">
+    </p>
+            
+
+            <p>
+                <label asp-for="Fone">Telefone</label>
+                <input type="text" asp-for="Fone" name="Fone" placeholder="Digite seu telefone com DDD">
+            </p>
+            
+        
+            <p>
+                <label asp-for="DataNascimento">Data de Nascimento</label>
+                <input type="date" asp-for="DataNascimento" name="DataNascimento" >
+            </p>
+
+            <p>
+                <label asp-for="Sexo">Sexo</label>
+                <select name="Sexo" asp-for="Sexo">
+                    <option value= "Não selecionado">Selecione seu sexo</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                </select>
+            </p>
+            
+
+            <p>
+                <label asp-for="Cep" >Cep</label>
+                <input type="text" name="Cep" asp-for="Cep" placeholder="Digite seu CEP" >
+            </p>
+            <p>
+                <label asp-for="Endereco" >Endereço completo:</label>
+                <input type="text" asp-for="Endereco" name="Endereco" placeholder="Digite seu Endereço">
+            </p>
+            <p>
+                <label asp-for="Senha">Crie uma senha</label>
+                <input type="text" name="Senha" asp-for="Senha" placeholder="Crie uma senha">
+            </p>
+        
+            <p>
+        <button type="submit">Cadastrar</button>
+            </p>
+            <p id="Mensagem"><a href="Concluido">@ViewBag.Mensagem</a></p>
+            
+    </form>
+    </p>
+    <style>
+         body{
+                background-color: lightblue;
+            }
+            </style>
+    </body>
+  </html>

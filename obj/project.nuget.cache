@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zboVv+oCe2yssxi5GlMDVaT+bHYBLHjNf1L8kGjdyuhmrqNRKmSuROcbIEk5ZacVRaVaIxwpIoKZRDQG3/8GyQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Desktop\\projetoMVC\\projetoMVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\mysqlconnector\\1.0.1\\mysqlconnector.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
